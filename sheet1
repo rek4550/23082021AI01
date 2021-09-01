@@ -1,0 +1,115 @@
+Python 3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 5**9
+1953125
+>>> 3//2
+1
+>>> 7//3
+2
+>>> 7/3
+2.3333333333333335
+>>> 6 == 6
+True
+>>> a=20;a+=30;a%=3; print(a)
+2
+>>> True*False
+0
+>>> True & False
+False
+>>> True and False
+False
+>>> ((6>3) and (7<4) or (18==3)) and (9>3)
+False
+>>> True is False
+False
+>>> False is 'False'
+False
+>>> ((True==False) or (False>True)) and (False<=True)
+False
+>>> 
+>>> 
+>>> ##3.
+>>> s1 = "Nice to have it  "
+>>> s2 = "here"
+>>> s1+s2
+'Nice to have it  here'
+>>> 
+>>> ##4.
+>>> a = [1,2,[3,4],[5,[100,200,['hello']],23,11]1,7]
+SyntaxError: invalid syntax
+>>> a = [1,2,[3,4],[5,[100,200,['hello']],23,11],1,7]
+>>> a([3][1][2])
+Traceback (most recent call last):
+  File "<pyshell#23>", line 1, in <module>
+    a([3][1][2])
+IndexError: list index out of range
+>>> print(a[3][1][2])
+['hello']
+>>> 
+>>> 
+>>> ##5.
+>>> a.insert(0,s1)
+>>> a.insert(8,s2)
+>>> print(a)
+['Nice to have it  ', 1, 2, [3, 4], [5, [100, 200, ['hello']], 23, 11], 1, 7, 'here']
+>>> 
+>>> 
+>>> ##6.
+>>> numbers = [386,462,,47,418,907,344,236,375,823,566,597,978,328,615,953,345,399,162,758,219,918,237,897,567,98,67,45,857,980,789,900,67,456,623,743,690,980,888,908,788,899,786]
+SyntaxError: invalid syntax
+>>> numbers = [386,462,47,418,907,344,236,375,823,566,597,978,328,615,953,345,399,162,758,219,918,237,897,567,98,67,45,857,980,789,900,67,456,623,743,690,980,888,908,788,899,786]
+>>> for x in numbers:
+	if x == 237:
+	    print(x)
+	    break;
+	elif x%2==0:
+	    print(x)
+
+	    
+386
+462
+418
+344
+236
+566
+978
+328
+162
+758
+918
+237
+>>> 
+>>> 
+>>> ##7.
+>>> color_list_1=set(["white","black","red"])
+>>> color_list_2=set(["red","green"])
+>>> color_list_1 - color_list_2
+{'white', 'black'}
+>>> 
+>>> 
+>>> 
+>>> ##11.
+>>> items=input("input comma separated sequence of words")
+input comma separated sequence of words without,hello,bag,world
+>>> word=[word for word in items.split(",")]
+>>> print(",".join(sorted(list(set(words)))))
+Traceback (most recent call last):
+  File "<pyshell#55>", line 1, in <module>
+    print(",".join(sorted(list(set(words)))))
+NameError: name 'words' is not defined
+>>> print(",".join(sorted(list(set(words)))))
+Traceback (most recent call last):
+  File "<pyshell#56>", line 1, in <module>
+    print(",".join(sorted(list(set(words)))))
+NameError: name 'words' is not defined
+>>> 
+
+
+>>> 
+
+>>> words=[word for word in items.split(",")]print(",".join(sorted(list(set(words)))))
+SyntaxError: invalid syntax
+>>> words=[word for word in items.split(",")]
+>>> print(",".join(sorted(list(set(words)))))
+ without,bag,hello,world
+>>> 
